@@ -1,0 +1,37 @@
+== REQUIRES FOR EVERY TASK ==
+- EVERY TASK SHOULD BE IN A DIFFERENT HTML FILE
+- EVERY TASK NEEDS TO BE WELL INDENTED
+- EVERY TASK SHOULD HAVE COMMENTS (IF YOU NEED OFC)
+
+// =================================================
+// * task 1
+// =================================================
+In the results folder, you need to create a HTML file with this name: 2.1.1_conditionals.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (1) ###############
+
+- Ask the user what is his SR/ELO in Overwatch and show the messages using the function: document.write(string)
+	+ document.write info: https://developer.mozilla.org/en-US/docs/Web/API/Document/write
+
+	- if his elo is lower than 1000, show the message: "your elo is bronze" and paint that text with some bronze/brown color
+	- if his elo is between 1000 and 2000, show the message: "your elo is silver" and paint that text with some gray/silver color
+	- if his elo is between 2000 and 2600, show the message: "your elo is gold" and paint that text with some yellow/gold color
+	- if his elo is between 2600 and 3000, show the message: "Insane, you are diamond" and paint that text with some blue/light color
+	- if his elo is higher than 3000 and lower than 4600, show the message: "LMAO grandmaster, get out" and paint that text with some purple color
+	- if the user introduces some string show and alert with the message: "not allowed values, try again"
+	- if the user introduces some number higher than 4600, write in the browser: "This is impossible" with text in red
+
+
+// =================================================
+// * task 2
+// =================================================
+In the results folder, you need to create a HTML file with this name: 2.1.2_conditionals.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (2) ###############
+- Ask the user what HEALER wants to play
+	- If the user introduces some name different thant: Ana, mercy, Lucio, baptiste, brigite and moira, write in browser: "you are not in the healers Q" with color red.
+	- If the user introduces a good name, write this message in the browser in H1:
+		"You will play: healer, good choice"
+	- Make sure all names are in lowercase and the value of the user is in lowercase too

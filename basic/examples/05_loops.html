@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Loops</title>
+</head>
+<body>
+	<script>
+		
+		/*
+			List of classic loops, all of this loops allows us to iterate or check values
+			of big structures one by one
+			- while loop
+			- do while loop
+			- foor loop
+
+			EXAMPLES:
+				//while loop
+				while(condition){
+					console.log("do fancy things")
+					//in some point, the condition should change inside this loop to 
+					//break the condition and go out the loop
+				}
+
+				//do while
+				do{
+					console.log("doing some dark things")
+					//In this case this loop is pretty similiar like while, but in this case
+					//we are doing something at least 1 time.
+					//In while loop we are checking the condition first, instead of do nothing
+
+				} while(condition)
+
+				//for loop
+				//This is one of the classics and most used
+				//Basically we are starting on the left (let i = 0)
+					- we initialize a variable: let i = 0 => "The value of i STARTS at 0"
+					- we check that variable: i<10 => "Is i lowest than 10?"
+					- we increment the value of i adding 1: i++ => "To the current value of i, I will add 1 more, now is 2"
+					- And we repeat these actions until i is greater than 10
+				for(let i = 0; i < 10; i++){
+					console.log("iteration: ", 1)
+				}
+				* Video about for loop (6 mins): https://youtu.be/s9wW2PpJsmQ
+			** IMPORTANT: ALL OF THIS  LOOPS NEEDS A CONDITION TO STOP, OTHERWISE YOU WILL HAVE A 
+			INFINITE LOOP, AND YOU DON'T WANT INIFITE LOOPS IN YOUR PC OR IN THE CLIENTS PC
+
+			example:
+			//infinte loop
+			while(true){
+				console.log("im doing a function")
+				console.log("im doing a function")
+				...
+			}
+		*/
+
+		// =================================================
+		// * TASKS
+		// =================================================
+		// 1.Using the for loop
+		// 	- ask the user his name 3 times
+		// 		* if the name is "admin" => show a message ...welcome admin
+		// 		* if the user introduces a bad name 3 times => show a message...you are not allowed
+		
+		
+		// 2.Using the do while loop
+		// 	- ask the user 1 number
+		// 		* if the number is greater than 10 => stops the script and show a message...too high
+		// 		* if the number is lower than 10 => keep asking numbers and show the previuous number using the alert function
+		
+		// 3.Using the while loop
+		// 	- ask the user one word
+		// 		* if the word is different than "exit", keep asking for a word
+		// 		* if the word is "exit" => show a message..."byeee"
+	</script>
+</body>
+</html>

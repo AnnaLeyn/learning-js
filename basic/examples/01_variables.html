@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+		
+	<script>
+	/*
+			In programming, we used VARIABLES.
+			VARIABLE: A piece of memory we use of our computers to store some data
+
+			In JS we have 3 ways to store VARIABLES
+	*/
+		//1 way
+		var fruit = "orange"
+
+		console.log(fruit)//im printing the value of the variable
+		//2 way
+		let pet = "dog"
+		console.log(pet)//im printing the value of the variable
+
+		//3 way 
+		//const color = "red"//before
+		let color = "red"//now
+		console.log(color)//im printing the value of the variable
+		/*
+		To declare a VARIABLE, we use the WORDS:
+			- var
+			- let 
+			- const
+		Why 3? because each word works different
+			- var => To declare GLOBAL VARIABLES, you can overwrite the value
+			- let => To declare LOCAL VARIABLES, you can overwrite the value
+			- const => To declare LOCAL OR GLOBAL VARIABLES, you CANNOT overwrite the value (because its a constant value)
+
+		THE MODERN JS RECOMMENDS USE LET AND CONST
+		*/
+		console.log("==================")
+		fruit = "apple"
+		console.log(fruit)//im printing the value of the variable
+		pet = "cat, the best"
+		console.log(pet)//im printing the value of the variable
+		color = "green"
+		console.log(color)//im printing the value of the variable
+		console.log("I guess something is broken D:")
+		console.log("And ofc you cannot read this, because the code before, break the web :(")
+	</script>
+</body>
+</html>

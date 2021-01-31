@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Data types JS</title>
+</head>
+<body>
+	<script>
+		/*
+		Like in real life we have a multiple data types and multiple options.
+		Names:
+		- string => sentences or characters
+		- number => single numbers (12,0,-2) (Only numbers from 0-9)
+		- double => decimal numbers
+		- boolean => logical values (true or false)
+		- null => xD, null value, means nothing
+		- undefined => xD what can I say, just undefined value
+		- object //high level for now
+		*/
+
+		/*
+			STRINGS:
+				- Why we call strings? because we are chaining multiple characters 
+					h => 1 character
+					i => 1 character
+					"hi"
+
+				- For strings you can use double quotes or single quotes, but always should be the same, like you cannot 
+					open a string with double quotes and close with single quote, that's will throw an error
+					example: NEVER => "hello, this shit is bad'
+									 GOOD => "this is fine"
+									 GOOD => 'this is fine too'
+				- ALWAYS if you open a quotes for string, you ALWAYS should close that quote
+					example: let name = "John //This will throw an error because the string is open
+									 let age = 14
+		*/
+		let color = "purple"
+
+		let age = 54
+		let price = 10.99
+		let married = false
+		let empty = null //this means probaly I will need later, that's why im initializing this var here
+		let noDefined = undefined //this means probaly I will need later, that's why im initializing this var here
+		
+		console.log(color)
+		console.log(age)
+		console.log(married)
+		console.log("==================")
+		/*
+		We can even find out what type of variable we have if we don't know what type of variable it is.
+		Using the typeof word
+		Example:
+			typeof yourVariable
+		*/
+		console.log(typeof color)
+		console.log("==================")
+
+		/*Also we can concatenate variables and some text to get better console.logs and get more info
+			CONCATENATE: Joining or linking two or more things
+			To do that we use the "+" (plus) symbol
+			Example:
+				"Hello my name is:" + name
+		*/
+		console.log("My favourite color is: "+ color)
+		console.log("changing color...")
+		color = "red"
+		console.log("My favourite color is: "+ color)
+		console.log("That's why we use variables, because is much better to change the value of a variable, that will affect to all variables with that name")
+		/*
+			you can concatenate mutiple variables with strings to get better information in your logs
+		*/
+		console.log("This "+color+" t-shirt costs me like " + price + "$")
+		console.log("================== TASK ==================")
+		console.log("Your task here, when it's done, send me the file :)")
+		/*
+		== TASK ==
+		1- shows on the console the type of variables I have previously defined with this format
+			"The variable color is: "
+			"The variable age is: "
+		2- Create a description with your data using variables and show by console with this format
+			"***** - ***** - *****"
+			"- Name: Elizaveta"
+			"- Nº pets: 2"
+			"- Favourite color: red"
+			"- Occupation: Developer"
+			"- Kids: true"
+			"- Link profile: null"
+			"- Adress: undefined"
+			"***** - ***** - *****"
+		*/
+
+	</script>
+</body>
+</html>
