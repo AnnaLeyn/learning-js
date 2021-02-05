@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    <script>
+        // 1.Using the for loop
+        // 	- ask the user his name 3 times
+        // 		* if the name is "admin" => show a message ...welcome admin
+        // 		* if the user introduces a bad name 3 times => show a message...you are not allowed
+
+       
+        let user = prompt("What's your name");
+
+        if (user == "admin") {alert("Welcome admin")
+    }
+
+        else {
+            for (let i = 0; i < 3; i++)
+                (user != "admin"); {prompt("What's your name")
+            }
+            if (user != "admin") {alert("go away")
+        }
+    }
+   
+
+    
+
+
+    // 2.Using the do while loop
+		// 	- ask the user 1 number
+		// 		* if the number is greater than 10 => stops the script and show a message...too high
+		// 		* if the number is lower than 10 => keep asking numbers and show the previuous number using the alert function
+
+
+let i = prompt ("What's your number");
+do {
+    if (i > 10) {
+        alert ("too high")
+        break;
+    }
+
+    if (i < 10) {
+        i = prompt ("other");
+}
+}while (i > 10) 
+alert ("Too high")
+
+let user = prompt ("Tell it");
+while (user != "exit") {
+    user = prompt ("tell it"); 
+    if (user == "exit"){
+    alert ("here we go");}
+}
+
+
+
+
+
+
+
+    </script>
+</body>
