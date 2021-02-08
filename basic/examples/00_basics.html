@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Basics about JS</title>
+	<style>
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		h3{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<h2>In this file I will explain a little the very very basics of JS and I will show a couple of examples</h2>
+	<h3>Read every comment of the JS</h3>
+
+	<script>
+		// ##### DON'T RUN THIS CODE, JUST GOOD AND BAD EXAMPLES ###############
+
+		// =================================================
+		// * VARIABLES
+		// =================================================
+		
+		// # When we define a VARIABLE, we are assigning some value to a name to use during our script
+		
+		// - Assigning the value "Anna" to the userName Variable
+		// - Assigning from right to left
+		// - We only use 1 =
+		let userName = "Anna"
+
+		// # You cannot use some words as variables, because there are reserved to use in JS
+		// This is not possible
+		// const let = "user"//not allowed
+		// const while = true//not allowed
+
+		// =================================================
+		// * Curly brackets
+		// =================================================
+		
+		// We only use curly brackets just to lock up code indise code.
+		// Why? Because we need order and a computer needs to know that order, in what
+		// 	order should run a code, if something happend, what to do and where to go...
+		// Just use curly brackets for control structures (if, else, for, do while, while, switch, functions)
+
+		//!! AVOID THIS EXAMPLES, THIS IS A BAD AND MESSY CODE
+		{console.log("this is wrapping nothing")}
+
+		{alert("this is bad too")
+		}
+
+		// =================================================
+		// * ##### CONTROL STRUCTURES ###############
+		// =================================================
+
+
+		// =================================================
+		// * IF, ELSE, ELSE IF
+		// =================================================
+		// ALWAYS ALWAYS ALWAYS INDENT YOUR CODE, AVOID CONDITIONALS OR LOOPS IN THE SINGLE LINE
+		// PUT WHERE IS YOU ARE CLOSING THE CURLY BRACKET AND WHAT IS CLOSING(IF...ELSE...FUNCTION...LOOP)
+
+		let sunny = true
+		let day = true
+		// Example 1
+		if (sunny) {
+			console.log("Is sunny")
+		}//if
+
+		// Example 2
+		if (sunny && day) {
+			console.log("Good morning")
+		} else {
+			console.log("Good night")
+		}//else
+
+		// =================================================
+		// * FOR LOOP
+		// =================================================
+		// ALWAYS ALWAYS ALWAYS INDENT YOUR CODE, AVOID CONDITIONALS OR LOOPS IN THE SINGLE LINE
+		// PUT WHERE IS YOU ARE CLOSING THE CURLY BRACKET AND WHAT IS CLOSING(IF...ELSE...FUNCTION...LOOP)
+
+		let total = 20
+		for (let i = 0; i < total; i++) {
+			console.log(i)
+		}//for
+
+		//instead of increment 1, Im incrementing each 2 numbers
+		for (let i = 0; i < total; i += 2) {
+			console.log(i)
+		} //for
+
+		// =================================================
+		// * WHILE
+		// =================================================
+		// ALWAYS ALWAYS ALWAYS INDENT YOUR CODE, AVOID CONDITIONALS OR LOOPS IN THE SINGLE LINE
+		// PUT WHERE IS YOU ARE CLOSING THE CURLY BRACKET AND WHAT IS CLOSING(IF...ELSE...FUNCTION...LOOP)
+
+		// The while loop always FIRST we check if your condition is TRUE, if is not TRUE
+		// never never ever will go inside the WHILE LOOP
+
+		let i = 0
+		while(i < 20){
+			console.log("inside while: " + i)
+			//adding 1 to i 
+			i++; //if I don't have this sentence, the code will run forever
+
+			//YOU ALWAYS SOME VALUE TO STOP THE WHILE LOOP
+		}// while
+
+		let i = 0
+		let stop = false
+		while(stop === false){
+			i++;
+			if(i == 20){
+				//I just will stop when the value is different than false
+				stop = true
+				console.log("Stopped at " + i)
+				console.log("Value of stop: " + stop);
+			}else{
+				console.log("Value of i:" + i + ", stop value => " + stop)
+			}//else
+		}//while
+
+		// =================================================
+		// * DO WHILE
+		// =================================================
+		// ALWAYS ALWAYS ALWAYS INDENT YOUR CODE, AVOID CONDITIONALS OR LOOPS IN THE SINGLE LINE
+		// PUT WHERE IS YOU ARE CLOSING THE CURLY BRACKET AND WHAT IS CLOSING(IF...ELSE...FUNCTION...LOOP)
+
+		// The DO WHILE loop will execute your code AT LEAST 1 TIME until check if your condition
+		// is true, you need a point or break point to change that condition
+
+		let iterator = 0
+		do{
+			console.log("Iterator: " + iterator)
+			iterator++
+		}while(iterator < 30);
+
+		let userResponse = ""
+		do {
+			userResponse = prompt("Do you wanna exit?")
+		} while (userResponse != "exit");
+		console.log("Im off")
+
+		// =================================================
+		// * SWTICH
+		// =================================================
+		// ALWAYS ALWAYS ALWAYS INDENT YOUR CODE, AVOID CONDITIONALS OR LOOPS IN THE SINGLE LINE
+		// PUT WHERE IS YOU ARE CLOSING THE CURLY BRACKET AND WHAT IS CLOSING(IF...ELSE...FUNCTION...LOOP)
+
+		// Switch case is like if...else if...else chains
+		// switch (value) {
+		// 	case option:
+				
+		// 		break;
+		// 	case option:
+				
+		// 		break;
+		// 	case option:
+				
+		// 		break;
+		
+		// 	default:
+		// 		break;
+		// } //switch
+
+		let day = "m"
+		switch (day) {
+			case "m":
+				console.log("Today is monday")
+				break;
+			case "t":
+				console.log("Today is tuesday")
+				break;
+			case "x":
+				console.log("Today is wednesday")
+				break;
+			case "tt":
+				console.log("Today is thursday")
+				break;
+			case "f":
+				console.log("Today is friday")
+				break;
+			//If the user introduces other letter different, will show this message
+			default:
+				console.log("That day is not available")
+				break;
+		}//switch
+
+		//This is the same as SWITCH, but more dirty
+		if(day == "l"){
+			console.log("Today is monday")
+		}else if(day == "t"){
+			console.log("Today is tuesday")
+		}else if(day == "x"){
+			console.log("Today is wednesday")
+		}else if(day == "tt"){
+			console.log("Today is thursday")
+		}else if(day == "f"){
+			console.log("Today is friday")
+		}else{
+			console.log("That day is not available")
+		} //else
+
+
+		
+	</script>
+</body>
+</html>
