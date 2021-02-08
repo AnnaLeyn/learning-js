@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BASIC SYNTAX OF JS</title>
+</head>
+<body>
+	<script>
+		// In JS we use VARIABLES, that variable is just a space of memory in our PC I will use later.
+		// In JS we can use the ";" to say to our scripts: "hey, stop of to read my line, is done"
+		// == Differents of declare variables ==
+		let username; //valid
+		//more JS code...
+		//more JS code...
+		userName = "Jack"
+		let userName = null; //valid
+		let user_name = ""//valid
+
+		// We cannot REDECLARE a variable with the same if is already declare
+		// let userName = "John" //invalid
+
+		// When we declare variables, we are ASSIGNING the value FROM RIGHT to THE LEFT
+		// ALWAYS ALWAYS WE ASSIGN THE VALUE FROM RIGHT TO LEFT.
+		// name   = value
+		let color = "red"
+
+		// Can we declare and use a variable or ovewrite while our programm is running?
+		// - R: yes
+		let age = 56
+		console.log("more js code...")
+		age = 43
+
+		// =================================================
+		// * DATA TYPES
+		// =================================================
+		// - string
+		// - number
+		// - boolean
+		// - object
+		// - null
+		// - undefined
+
+		// =================================================
+		// * BASIC FUNCTIONS
+		// =================================================
+		// ##### PROMPT ###############
+		// The PROMPT function allows us to make a question to the user.
+		// - This function RETURNS a value, in this case, rerturns the response from the user (ALWAYS)
+
+		// Example 1
+		let battleTag = prompt("What your battletag?")
+		// you see?, the prompt is on the right, and we are assigning that value to the left and saving the response
+		// from the user on the "battletag" variable
+
+		// Example 2
+		prompt("What's your name") //Here are asking, but we are not saving the response from user, then this is not valid for nothing
+
+		//Example 3
+		let healerSelected = ""
+		//...some code
+		//asking now
+		healerSelected = prompt("What healer do you want to play?")
+		healerSelected = prompt("I can ask again and overwrite the previous VALUE")
+		//overwritting again
+		healerSelected = prompt("Always needs to store this value from this function because I want to do some things with this value")
+
+		// ##### DOCUMENT.WRITE ###############
+		// - This function allows to write text inside the browser, NEVER RETURNS any value, only write text 
+		// 	in the browser, we can write HTML inside this function
+
+		// Example 1
+		document.write("Hello Dolly")
+		document.write("Privet milaya")
+		document.write("<h1>Writing some HTML </h1>")
+		document.write("<h2 style='color:red;'> We can write HTML and CSS too </h2>")
+		const htmlText = "<h2> This is a text inside a variable, but still a string, then I can pass to the function </h2>"
+		document.write(htmlText)
+		document.write(htmlText + " We can concatenate text too")
+
+
+
+		
+
+
+	</script>
+</body>
+</html>
