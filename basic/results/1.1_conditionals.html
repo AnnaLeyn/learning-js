@@ -11,16 +11,19 @@ let elo = prompt("What's your elo?")
 
 
 if (elo <= 1000) {
-    document.write("you are bronze")}
+    document.write("<h3 style='color:#e6ae37;'> you are bronze </h3>")
+}
 else if (elo >= 1001 && elo < 2000) {
-    document.write("you are silver")}
+    document.write("<h3 style='color: #807e7c;'> you are silver</h3>")
+}
 else if(elo >= 2000 && elo < 2500) {
-    document.write("you are gold")}
+    document.write("<h3 style='color: yellow;'> you are gold</h3>")
+}
 else if (elo >= 2500 && elo < 3000){
-    document.write("Insane, you are diamond")
+    document.write("<h2 style='color: #8a153a;'> Insane, you are diamond</h2>")
 }
 else if (elo >=3000 && elo < 4600){
-    document.write("LMAO grandmaster, get out")
+    document.write("<h1 style='color: #064459;'> LMAO grandmaster, get out</h1>")
 }
 
 
