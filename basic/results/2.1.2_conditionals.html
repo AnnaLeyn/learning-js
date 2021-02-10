@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CONDITIONALS</title>
+</head>
+<body>
+    <script>
+
+
+/*Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (2) ###############
+- Ask the user what HEALER wants to play
+	- If the user introduces some name different thant: Ana, mercy, Lucio, baptiste, brigite and moira, write in browser: "you are not in the healers Q" with color red.
+	- If the user introduces a good name, write this message in the browser in H1:
+		"You will play: healer, good choice"
+	- Make sure all names are in lowercase and the value of the user is in lowercase too */
+
+let healer = prompt ('What healer u play?')
+switch (healer){
+    case "ana":
+        document.write('<h1>You will play: healer, good choice</h1>')
+        break;
+    case "baptiste":
+        document.write('<h1>You will play: healer, good choice</h1>')
+        break;
+    case "lucio":
+        document.write('<h1>You will play: healer, good choice</h1>')
+        break;   
+    case "moira":
+        document.write('<h1>You will play: healer, good choice</h1>')
+        break;  
+    default:      
+        document.write ("<h1 style='color: red;'> you are not in the healers Q </h1>")
+        break;
+}
+    
+
+
+</script>
+</body>
+</html>
