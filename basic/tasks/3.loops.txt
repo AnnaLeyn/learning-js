@@ -1,0 +1,55 @@
+== REQUIRES FOR EVERY TASK ==
+- EVERY TASK SHOULD BE IN A DIFFERENT HTML FILE
+- EVERY TASK NEEDS TO BE WELL INDENTED
+- EVERY TASK SHOULD HAVE COMMENTS (IF YOU NEED OFC)
+
+// =================================================
+// * task 1
+// =================================================
+In the results folder, you need to create a HTML file with this name: 3.loops.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (1) ###############
+
+- Using the loops
+	+ for loop
+	+ while loop
+	+ do while loop
+	Give me this result on the console
+
+	Example:
+		"iteration: 1"
+		"iteration: 2"
+		"iteration: 3"
+		"iteration: 4"
+		"iteration: 5"
+		"iteration: 6"
+		"iteration: 7"
+		"iteration: 8"
+		"iteration: 9"
+		"iteration: 10"
+
+// =================================================
+// * task 2
+// =================================================
+In the results folder, you need to create a HTML file with this name: 3.1.loops.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (2) ###############
+- Ask the user 1 number (make sure is a number), with that number you need to build
+	a for loop, and print on the browser (using the document.write function)
+	each iteration should be in a single line.
+	IF the user introduces some string, show a message with an alert... "You just can introduce numbers"
+	IF the user introduces some number higher than 1.000 advice and ask him with the prompt function... "Are you sure do you want to use this number + userNumber" AND if the user types "yes" print all that iterations in the browser.
+
+	Example:
+	Iteration 1
+	Iteration 2
+	Iteration 3
+	Iteration 4
+	...
+	Iteration 789
+	Iteration 780
+	Iteration 781
+	...
+	Iteration 998...
