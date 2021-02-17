@@ -1,72 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Data types JS</title>
 </head>
+
 <body>
-<script>
-/*##### Task definition (1) ###############
-
-- Using the loops
-	+ for loop
-	+ while loop
-	+ do while loop
-	Give me this result on the console*/
-/*let player = "red"    
-for (let i = 1; i < 11; i++) {
-    console.log("iteration", i)
-}
-
-let i = 1
-while (i < 11) {
-	console.log("loop", i);
-	i++
-}
-
-
-let i = 1
-do {
-	if (i < 11){
-	console.log('loop', i)	
-	i++
-	}
-	
-} while (i < 11);*/
-
-/*##### Task definition (2) ###############
-- Ask the user 1 number (make sure is a number), with that number you need to build
-	a for loop, and print on the browser (using the document.write function)
-	each iteration should be in a single line.
-	IF the user introduces some string, show a message with an alert... "You just can introduce numbers"
-	IF the user introduces some number higher than 1.000 advice and ask him with the prompt function... "Are you sure do you want to use this number + userNumber" AND if the user types "yes" print all that iterations in the browser.
-
-	Example:
-	Iteration 1
-	Iteration 2
-	Iteration 3
-	Iteration 4
-	...
-	Iteration 789
-	Iteration 780
-	Iteration 781
-	...
-	Iteration 998...*/
-
-	let age =prompt ('What is your age?')
-	let ageConverted = parseInt (age)
-	if (isNaN (age)) {
-		alert('You can just introduce numbers')
-	}else{
-		let userResponse = prompt ('Are you sure? '+age)
-		if (userResponse == "yes"){
-		for (let i = 0; i < 1000; i++){
-			document.write(i, "<br>")
+	<script>
+		/*##### Task definition (1) ###############
+		
+		- Using the loops
+			+ for loop
+			+ while loop
+			+ do while loop
+			Give me this result on the console*/
+		/*let player = "red"    
+		for (let i = 1; i < 11; i++) {
+				console.log("iteration", i)
 		}
+		
+		let i = 1
+		while (i < 11) {
+			console.log("loop", i);
+			i++
 		}
-	}
+		
+		
+		let i = 1
+		do {
+			if (i < 11){
+			console.log('loop', i)	
+			i++
+			}
+			
+		} while (i < 11);*/
+
+		/*##### Task definition (2) ###############
+		- Ask the user 1 number (make sure is a number), with that number you need to build
+			a for loop, and print on the browser (using the document.write function)
+			each iteration should be in a single line.
+			IF the user introduces some string, show a message with an alert... "You just can introduce numbers"
+			IF the user introduces some number higher than 1.000 advice and ask him with the prompt function... "Are you sure do you want to use this number + userNumber" AND if the user types "yes" print all that iterations in the browser.
+		
+			Example:
+			Iteration 1
+			Iteration 2
+			Iteration 3
+			Iteration 4
+			...
+			Iteration 789
+			Iteration 780
+			Iteration 781
+			...
+			Iteration 998...*/
+
+		// =================================================
+		// * Anna solution
+		// =================================================
+		let age = prompt('What is your age?')
+		let ageConverted = parseInt(age)
+		if (isNaN(age)) {
+			alert('You can just introduce numbers')
+		} else {
+			let userResponse = prompt('Are you sure? ' + age)
+			if (userResponse == "yes") {
+				for (let i = 0; i < 1000; i++) {
+					document.write(i, "<br>")
+				}
+			}
+		}
 	//nfpaef
 
-</script>
+	// =================================================
+	// * Azzer solution
+	// =================================================
+		let total = prompt("Insert a number")
+
+		// if total is not a valid number
+		if(isNaN(total)){
+			// show this alert, and stop the script
+			alert("This is not a valid number")
+		}else{
+			let userConfirmation = prompt("Are you use you wan't to use this number? ", total)
+			// If the user confirms, loop and paint in the browser
+			if(userConfirmation === "yes"){
+				for (let i = 0; i < total; i++) {
+					document.write("<h1>Iteration: ", i, "</h1>")
+				}
+			}
+		}
+
+	</script>
 </body>

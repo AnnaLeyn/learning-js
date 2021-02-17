@@ -1,0 +1,39 @@
+== REQUIRES FOR EVERY TASK ==
+- EVERY TASK SHOULD BE IN A DIFFERENT HTML FILE
+- EVERY TASK NEEDS TO BE WELL INDENTED
+- EVERY TASK SHOULD HAVE COMMENTS (IF YOU NEED OFC)
+
+// =================================================
+// * task 1
+// =================================================
+For this task, you need to create a separate HTML file, the name of this file should be: 3.1.loops_conditionals_1.html
+
+##### Task definition (1) ###############
+
+	- Ask the user a number, between 0 and 100
+	- Use the number of the user as a limit
+	- Create a loop (no matter what loop you choose) and print every iteration in browser.
+		- If the current iteration is 27, 44 or 71, print that iteration in the browser with the color red
+
+// =================================================
+// * task 2
+// =================================================
+For this task, you need to create a separate HTML file, the name of this file should be: 3.1.loops_conditionals_2.html
+
+##### Task definition (1) ###############
+	For this entire task, you cannot use the "<br>" tag :)
+	- Ask the user a number between 0 and 50
+	- Check if that number is higher than 50
+		- If the number is higher than 50, show an alert message saying "this number is to high" and print the word "ERROR" in the
+			browser, with the color red, and the font-size should be 24px.
+		- If the number is less than 50
+			- Print in the browser the iteration, but in reverse, like this example
+
+				iteration: 50
+				iteration: 49
+				iteration: 48
+				iteration: 47
+				...
+				iteration: 0
+			- If the number is 25, skip that iteration and print this message in the browser
+				"Im in the middle of the iteration" (This text should be blue)
