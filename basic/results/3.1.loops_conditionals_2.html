@@ -2,48 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loops</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Loops</title>
 </head>
+
 <body>
-<script>
+	<script>
 
-/*##### Task definition (1) ###############
-	For this entire task, you cannot use the "<br>" tag :)
-	- Ask the user a number between 0 and 50
-	- Check if that number is higher than 50
-		- If the number is higher than 50, show an alert message saying "this number is to high" and print the word "ERROR" in the
-			browser, with the color red, and the font-size should be 24px.
-		- If the number is less than 50
-			- Print in the browser the iteration, but in reverse, like this example
+		/*##### Task definition (1) ###############
+			For this entire task, you cannot use the "<br>" tag :)
+			- Ask the user a number between 0 and 50
+			- Check if that number is higher than 50
+				- If the number is higher than 50, show an alert message saying "this number is to high" and print the word "ERROR" in the
+					browser, with the color red, and the font-size should be 24px.
+				- If the number is less than 50
+					- Print in the browser the iteration, but in reverse, like this example
+		
+						iteration: 50
+						iteration: 49
+						iteration: 48
+						iteration: 47
+						...
+						iteration: 0
+					- If the number is 25, skip that iteration and print this message in the browser
+						"Im in the middle of the iteration" (This text should be blue)*/
+		let roomNumber = prompt('What is your room number?')
+		if (roomNumber > 50) {
+			alert(' We do not have such rooms')
+			document.write("<h1 style='color: red; font-size: 40px;'>ERROR </h1>");
 
-				iteration: 50
-				iteration: 49
-				iteration: 48
-				iteration: 47
-				...
-				iteration: 0
-			- If the number is 25, skip that iteration and print this message in the browser
-				"Im in the middle of the iteration" (This text should be blue)*/
-let roomNumber = prompt('What is your room number?')    
-if (roomNumber > 50){
-    alert(' We do not have such rooms')
-    document.write("<h1 style='color: red; font-size: 40px;'>ERROR </h1>");
+		} else {
+			for (let roomNumber = 50; roomNumber > 0; roomNumber--) {
 
-} else   
-for (let roomNumber =1; roomNumber < 50; roomNumber++){       
-    
-    if (roomNumber == 25){
-        document.write("<p style='color: blue;'>Im in the middle of the iteration</p>") 
-        
-    } else{
-     document.write ("<p>",roomNumber, "</p>")
-    }
-}roomNumber--
-    
-       
-    
-</script>
+				if (roomNumber == 25) {
+					document.write("<p style='color: blue;'>Im in the middle of the iteration</p>")
+
+				} else {
+					document.write("<p>", roomNumber, "</p>")
+
+				}
+
+			}
+		}
+
+
+
+
+
+	</script>
 
 </body>
