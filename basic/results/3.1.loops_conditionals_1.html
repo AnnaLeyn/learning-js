@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    <script>
+        /*// =================================================
+        // * task 1
+        // =================================================
+        For this task, you need to create a separate HTML file, the name of this file should be: 3.1.loops_conditionals_1.html
+        
+        ##### Task definition (1) ###############
+        
+            - Ask the user a number, between 0 and 100
+            - Use the number of the user as a limit
+            - Create a loop (no matter what loop you choose) and print every iteration in browser.
+                - If the current iteration is 27, 44 or 71, print that iteration in the browser with the color red*/
+
+        let favNumber = prompt('What is your favorite number ')
+        do {
+
+            if (favNumber == 27 || favNumber == 44 || favNumber == 71) {
+                document.write("<h1 style='color: red;'>", favNumber, "</h1>", "<br>")
+
+
+            } else {
+                document.write(favNumber, "<br>")
+
+            } favNumber--
+
+
+
+        } while (favNumber < 100 && favNumber > 0);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
