@@ -33,13 +33,13 @@
 			document.write("<h1 style='color: red; font-size: 40px;'>ERROR </h1>");
 
 		} else {
-			for (let i = 50; roomNumber > 0; roomNumber--) {
+			for (let i = roomNumber; i > 0; i--) {
 
-				if (roomNumber == 25) {
+				if (i == 25) {
 					document.write("<p style='color: blue;'>Im in the middle of the iteration</p>")
 
 				} else {
-					document.write("<p>", roomNumber, "</p>")
+					document.write("<p>", i, "</p>")
 
 				}
 
