@@ -1,0 +1,55 @@
+== REQUIRES FOR EVERY TASK ==
+- EVERY TASK SHOULD BE IN A DIFFERENT HTML FILE
+- EVERY TASK NEEDS TO BE WELL INDENTED
+- EVERY TASK SHOULD HAVE COMMENTS (IF YOU NEED OFC)
+
+// =================================================
+// * task 1
+// =================================================
+In the results folder, you need to create a HTML file with this name: 4.arrays.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (1) ###############
+
+- Declare or create 3 arrays
+	- First array only can have strings
+	- Second array only can have numbers
+	- Third array must be a mix of values
+
+// =================================================
+// * task 2
+// =================================================
+In the results folder, you need to create a HTML file with this name: 4.2.arrays.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (2) ###############
+	- Declare 1 array of colors
+	- Ask the user what color wants to use, the user will introduce a number
+	- Use this number to access the array index and return the color.
+	- If the user introduces something different than a number, show an alert saying "ERROR, ONLY NUMBERS"
+	- If the user introduces a number AND that number exists or can be an index for the array 
+		print this message on the browser:
+
+		you have selected the color: selectedColor 
+
+// =================================================
+// * task 3
+// =================================================
+In the results folder, you need to create a HTML file with this name: 4.3.arrays.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (3) ###############
+	- Declare an array of fruits with at least 10 fruits
+	- Using a FOR loop AND the ATTRIBUTE LENGTH of the arrays, you need to 
+		print THE INDEX AND THE VALUE IN THE BROWSER WITH THIS FORMAT
+
+		Result example:
+		Fruit 0 is: apple
+		Fruit 1 is: orange
+		Fruit 2 is: peaches
+		...
+	- When you have been print all this information in the browser, you need to print this message too in color red
+
+	THE LIST OF FRUITS HAS totalFruits FRUITS
+	
+	//totalFruits is the total of elements of the array of fruits

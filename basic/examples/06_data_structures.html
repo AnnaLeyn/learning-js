@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Data structures</title>
+</head>
+<body>
+	<script>
+		// =================================================
+		// * THEORY [ARRAY]
+		// =================================================
+
+		// A common data structure in all programming languages is the ARRAY or LIST.
+		// Imagine we wan't to store multiples variables or multiples data types in some point
+		// because they are useful for our script, we can store in a single site grouping all our variables
+
+		// =================================================
+		// * HOW TO DEFINE
+		// =================================================
+		// - To define or create an array we use the square brackets: []
+		// - ofc needs a start and an end
+		// - We can define empty or we can define with some values inside
+		// - We separate one item from another using the "," (comma)
+		// - You don't have limits to saves items inside an array
+
+		// =================================================
+		// * EXAMPLES
+		// =================================================
+		// - Empty array:
+			const shoppingList = []
+		
+		// - Array with values:
+			const shoppingList2 = ["rice", "pasta", "juice", "oranges", "milk"]
+		
+		// - We can store variables inside too:
+			const item1 = "apples"
+			const item2 = "oranges"
+			const item3 = "milk for the little one ))"
+			const shoppingList3 = [item1, item2, item3]
+		
+		// - We can save different data types inside an array
+			const mixList = ["blue", 12, true, undefined, 22.50]
+		
+		// - Also we can store mutiples list inside a list
+			const fruitList = ["apples", "oranges", "tangerines", "bananas"]
+			const drinkList = ["milk", "juice", "beer"]
+			const meatList = ["beef", "chicken", "sausages"]
+
+			const bigList = [fruitList, drinkList, meatList]
+			console.log(bigList)
+		
+		// - And we can define this inside the same array without variables too
+			const bigList2 = [
+				["apples", "oranges", "tangerines", "bananas"],
+				["milk", "juice", "beer"],
+				["beef", "chicken", "sausages"]
+			]
+		
+		// =================================================
+		// * INDEX OF EACH ELEMENT INSIDE AN ARRAYS
+		// =================================================
+		// The INDEX of each element inside an array is the position what have that element
+		// inside the array.
+		// The index always starts at 0
+
+		// Example
+		const colors = ["blue", "red", "green", "purple"] // 4 items
+		// index     =    0       1       2         3     // 4 elements
+
+		// =================================================
+		// * READING ARRAYS
+		// =================================================
+		// If want to have access to some value of some array, we need to pass the index using
+		// the name of the array and inside the square brackets, the number of that index
+
+		// Example
+		//arrayName[indexNumber]
+		console.log(colors[0]) //blue
+		console.log(colors[2]) //green
+		console.log(colors[6]) //ERROR, THAT INDEX DOESN'T EXISTS INSIDE THE ARRAY
+
+		// =================================================
+		// * ATTRIBUTES / PROPERTIES
+		// =================================================
+		// For JS arrays are objects, thats means, we can have access to some attributes of this arrays.
+		// An attribute of an object is just is a characteristic of that object
+		// Example: A dog has 4 legs and 1 tail
+		// 				 A human has 2 legs, 2 arms 
+
+		// - LENGTH:
+		// this attribute will returns the total of items one array has
+		console.log(colors.length) // 4
+
+		
+	</script>
+</body>
+</html>
