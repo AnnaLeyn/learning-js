@@ -1,0 +1,64 @@
+== REQUIRES FOR EVERY TASK ==
+- EVERY TASK SHOULD BE IN A DIFFERENT HTML FILE
+- EVERY TASK NEEDS TO BE WELL INDENTED
+- EVERY TASK SHOULD HAVE COMMENTS (IF YOU NEED OFC)
+
+// =================================================
+// * task 1
+// =================================================
+In the results folder, you need to create a HTML file with this name: 4.4.arrays.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (1) ###############
+
+** Build your own array **
+	- Read the functions about arrays: https://www.w3schools.com/js/js_array_methods.asp
+	- Ask the user 1 number between 10 and 1000
+	- If the user introduces something different to a number between that range, keep asking
+		until he introduces a valid number (hint: maybe you need a loop?)
+	- If the user introduces a valid number, use that number as a limit and using a FOR LOOP
+		create an array with all that consecutive numbers
+	- when the array is fullfilled, show an alert saying: "check the console"
+	- Print this new array in the console
+
+	* hint: Maybe you need to create an emty array and fill inside the loop
+	Example Result:
+		//The user has introduced the number 25
+		// The array should be like this:
+			[0,1,2,3,4,5,6,8,9...21,22,23,24,25]
+
+// =================================================
+// * task 2
+// =================================================
+In the results folder, you need to create a HTML file with this name: 4.5.arrays.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (2) ###############
+
+	- Using this array, and for loops, print this multidimensional array
+		(we call multidimensional because has 2 arrays, 2 dimensions)
+	- I expect the same result, even with that separators "======"
+	
+	const  salary = [
+		["ABC", 24, 18000],
+		["EFG", 30, 30000],
+		["IJK", 28, 41000],
+		["EFG", 31, 28000],
+	]
+
+	Result example:
+			ABC
+			24
+			18000
+			==========
+			EFG
+			30
+			30000
+			==========
+			IJK
+			28
+			41000
+			==========
+			EFG
+			31
+			28000
