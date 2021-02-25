@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+       /* ##### Task definition (3) ###############
+	- Declare an array of fruits with at least 10 fruits
+	- Using a FOR loop AND the ATTRIBUTE LENGTH of the arrays, you need to 
+		print THE INDEX AND THE VALUE IN THE BROWSER WITH THIS FORMAT
+
+		Result example:
+		Fruit 0 is: apple
+		Fruit 1 is: orange
+		Fruit 2 is: peaches
+		...
+	- When you have been print all this information in the browser, you need to print this message too in color red
+
+	THE LIST OF FRUITS HAS totalFruits FRUITS
+	
+	//totalFruits is the total of elements of the array of fruits*/
+    let fruitList = ["apple ", "banana ", "pineapple ", "kiwi ", "peaches ", "grapes ", "watermelon ", "apricot ", "coconut ", "cherry "]
+    
+    for (let i = 0; i < fruitList.length; i++){
+        document.write("Fruit ", i, " is: ",fruitList [i],"<br>")
+       
+    } document.write("<p style = 'color:red;'>The list has ", fruitList.length, " fruits</p>")
+    
+
+    </script>
+</body>
+</html>

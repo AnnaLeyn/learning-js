@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+
+<body>
+
+    <script>
+
+        /*##### Task definition (2) ###############
+            - Declare 1 array of colors
+            - Ask the user what color wants to use, the user will introduce a number
+            - Use this number to access the array index and return the color.
+            - If the user introduces something different than a number, show an alert saying "ERROR, ONLY NUMBERS"
+            - If the user introduces a number AND that number exists or can be an index for the array 
+                print this message on the browser:
+        
+                you have selected the color: selectedColor */
+
+        let colorList = ["blue", "red", "yellow", "green", "white", "black"]
+        let favColor = prompt("What is the number of your color")
+        if (isNaN(favColor)) {
+            alert("ERROR, ONLY NUMBERS")
+        } else {
+
+            document.write("Your favourite number is ", colorList[favColor])
+
+        }
+
+
+    </script>
+</body>
+
+</html>
