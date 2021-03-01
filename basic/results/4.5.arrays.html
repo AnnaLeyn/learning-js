@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+
+    <script>
+
+        /*##### Task definition (2) ###############
+        
+        - Using this array, and for loops, print this multidimensional array
+            (we call multidimensional because has 2 arrays, 2 dimensions)
+        - I expect the same result, even with that separators "======"
+        
+        const  salary = [
+            ["ABC", 24, 18000],
+            ["EFG", 30, 30000],
+            ["IJK", 28, 41000],
+            ["EFG", 31, 28000],
+        ]
+        
+        Result example:
+                ABC
+                24
+                18000
+                ==========
+                EFG
+                30
+                30000
+                ==========
+                IJK
+                28
+                41000
+                ==========
+                EFG
+                31
+                28000*/
+
+        const salary = [
+            ["ABC", 24, 18000],
+            ["EFG", 30, 30000],
+            ["IJK", 28, 41000],
+            ["EFG", 31, 28000],
+        ]
+        let oneSalary = []
+        for (let i = 0; i < salary.length; i++) {
+            oneSalary = salary  
+            for (let j = 0; j < oneSalary.length; j++){
+                console.log(salary[i][j]);
+                
+            }console.log ("=====")
+        }
+
+
+
+
+    </script>
+</body>
