@@ -1,0 +1,44 @@
+== REQUIRES FOR EVERY TASK ==
+- EVERY TASK SHOULD BE IN A DIFFERENT HTML FILE
+- EVERY TASK NEEDS TO BE WELL INDENTED
+- EVERY TASK SHOULD HAVE COMMENTS (IF YOU NEED OFC)
+
+// =================================================
+// * task 1
+// =================================================
+In the results folder, you need to create a HTML file with this name: 4.6.arrays.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (1) ###############
+
+	- With this array, you need to 
+		- Add the color "red" to the end of the array
+		- Add the color "green" to the end of the array
+		- Extract the last value of the array and store in some variable
+		- Cut an array from the position 2 to 4 and store in some variable
+		- Give me the position / index of the color "yellow"
+		- Add the "gold" color to the first position of the array
+	- To solve all this little tasks you need to use this array functions:
+		pop, push, slice, indexOf, unshift
+	- After each little task, you need to print the array in console to see
+		the changes
+
+	** array **
+	const colors = ["lightblue", "orange", "salmon", "tomato", "brown", "white"]
+
+// =================================================
+// * task 2
+// =================================================
+In the results folder, you need to create a HTML file with this name: 4.7.arrays.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (2) ###############
+
+	- Shows an alert saying: "Welcome to your shopping list, write 'exist' when you are done"
+	- Ask the user: "What you will buy?"
+	- Store each answers in a array
+	- If the answer is "exist", stop asking
+	- Using a WHILE LOOP print in browser all the items from that array like a list (UL) with this message
+		- "you will buy"
+			- print each item inside a LI
+	- At the end, print the total of the elements he will buy (This is not a LI, just a h2)
