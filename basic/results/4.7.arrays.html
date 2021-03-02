@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+
+    <script>
+        /*##### Task definition (2) ###############
+        
+        - Shows an alert saying: "Welcome to your shopping list, write 'exist' when you are done"
+        - Ask the user: "What you will buy?"
+        - Store each answers in a array
+        - If the answer is "exist", stop asking
+        - Using a WHILE LOOP print in browser all the items from that array like a list (UL) with this message
+            - "you will buy"
+                - print each item inside a LI
+        - At the end, print the total of the elements he will buy (This is not a LI, just a h2)*/
+
+        let welcome = alert("Welcome to your shopping list, write 'exit' when you are done")
+        let askForList = prompt("What will you buy?")
+        let listOfBuyer = []
+        let ul = document.createElement("ul")
+        while (askForList != "exit") {
+            askForList = prompt("What will you buy?")
+            listOfBuyer.push(askForList)
+
+        }
+        document.write("<h2> You will buy </h2>")
+    
+        document.write("<ul>")
+        document.write("<li>", listOfBuyer, "</li>")
+        document.write("</ul>")
+        document.write("Items ", listOfBuyer.length)
+</script>
+</body>

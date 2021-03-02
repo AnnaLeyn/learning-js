@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+
+    <script>
+        /*##### Task definition (1) ###############
+        
+        - With this array, you need to 
+            - Add the color "red" to the end of the array
+            - Add the color "green" to the end of the array
+            - Extract the last value of the array and store in some variable
+            - Cut an array from the position 2 to 4 and store in some variable
+            - Give me the position / index of the color "yellow"
+            - Add the "gold" color to the first position of the array
+        - To solve all this little tasks you need to use this array functions:
+            pop, push, slice, indexOf, unshift
+        - After each little task, you need to print the array in console to see
+            the changes
+        
+        ** array **
+        const colors = ["lightblue", "orange", "salmon", "tomato", "brown", "white"]*/
+        const listColors = ["lightblue", "orange", "salmon", "tomato", "brown", "white"]
+        listColors.push("red", "green")
+        let green = listColors.splice(7);
+        let newColors = listColors.splice(2, 3);
+        let yellow = listColors.indexOf("yellow");
+        listColors.unshift("gold");
+
+
+        console.log(listColors)
+        console.log(green)
+        console.log(newColors)
+        console.log(yellow)
+    </script>
+</body>
