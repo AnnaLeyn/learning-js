@@ -28,14 +28,13 @@
         while (askForList != "exit") {
             askForList = prompt("What will you buy?")
             listOfBuyer.push(askForList)
-            
-            document.write("<ul>")
-            document.write("<li>", askForList, "</li>")
-            document.write("</ul>")
-
-        }
+        } document.write("<ul>")
         document.write("<h2> You will buy </h2>")
-        //idk when i put H2 to loop, it fucks up code
+        for (let i = 0; i < listOfBuyer.length; i++) {
+            document.write("<li>", listOfBuyer[i], "</li>")
+        }
+        document.write("</ul>")
+
         document.write("Items ", listOfBuyer.length)
     </script>
 </body>
