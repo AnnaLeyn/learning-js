@@ -1,0 +1,32 @@
+== REQUIRES FOR EVERY TASK ==
+- EVERY TASK SHOULD BE IN A DIFFERENT HTML FILE
+- EVERY TASK NEEDS TO BE WELL INDENTED
+- EVERY TASK SHOULD HAVE COMMENTS (IF YOU NEED OFC)
+
+// =================================================
+// * task 1
+// =================================================
+In the results folder, you need to create a HTML file with this name: 5.functions.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (1) ###############
+
+** Build your own functions **
+	-Create a function that receives a parameter, that parameter must be a name, inside the function you must use a function that you have already used before to be able to paint something in the browser.
+	The message you should display in the browser is:
+	"Hello userName, nice to see you again"
+	- I will call your functions 3 or 4 times and that function should print 3 or 4 times in browser that message with the name I pass
+		 as parameter 
+
+// =================================================
+// * task 2
+// =================================================
+In the results folder, you need to create a HTML file with this name: 5.1.functions.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (2) ###############
+	- Create the function "logger", that function accepts 1 parameter (1 array)
+	- Inside the function you need to iterate over that array and print all the
+		elements of the array in a LIST (EACH ELEMENT SHOULD BE A LI)
+	- print inside the browser ofc, and put a separator line with HTML in the end of the function
+	- To test this: create 2 or 3 arrays, and call your function passing this arrays as parameter

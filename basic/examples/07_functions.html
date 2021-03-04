@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Functions</title>
+</head>
+<body>
+	
+	<script>
+		// =================================================
+		// * FUNCTIONS
+		// =================================================
+		// javascript functions are very useful, a function is a piece of code that does only 1 thing, that is, we can create 
+		// many functions to be able to call them later and not have to repeat code.
+
+		// You was using funtions before, 
+			// - document.write => is a function (Returns nothing and accept parameters)
+			// - prompt => is a function (Returns a value and accept parameters)
+			// - alert => is a function (Returns nothing and accept parameters)
+
+
+		// =================================================
+		// * Declaring a function
+		// =================================================
+		// -To declare a function we use the keyword "function" + a name 
+		// -You NEVER EVER can create 2 functions with the same name
+		// -Inside this functions you can create the LOGIC what you need (loops, conditions, variables...)
+
+		//This function will print just a message in the console
+		function myFunction(){
+			console.log("Hello World from inside a function")
+		}
+		// Actually our function is just declared, but we NEED TO CALL IT or INVOKE
+		//invoking our function
+		myFunction()//Hello World from inside a function
+		//We can call / invoke our functions as many times as we want
+		myFunction()//Hello World from inside a function
+		myFunction()//Hello World from inside a function
+		myFunction()//Hello World from inside a function
+
+		// =================================================
+		// * Functions with parameters
+		// =================================================
+		// Most of the time we need to DECLARE functions that they are going to do something for us, then they need a parameter/argument 
+		function functionWithArgument(argument){
+			console.log("Your argument is: ", argument)
+		}
+		// And when we invoke our function, we MUST to PASS that argument
+		functionWithArgument("Liza") //Your argument is: Liza
+		functionWithArgument(12)//Your argument is: 12
+		functionWithArgument(true)//Your argument is: true
+		functionWithArgument(["can", "you", "feel", "rush"])//Your argument is: ["can", "you", "feel", "rush"]
+
+		//We can define our funtion with as many argument as we want, to do that, we use the comma ","
+		// BUT, I recommend, you just pass 2 or 3, NEVER MORE than 3
+		function funcWithArgs(param1, param2) {
+			console.log("Parameter 1: ", param1)
+			console.log("Parameter 2: ", param2)
+		}//funcWithArgs
+
+		funcWithArgs("Liza", "Vera")//my girls :)
+		funcWithArgs(10, 20)
+
+		// =================================================
+		// * Functions with RETURN
+		// =================================================
+		// A function can return a value as long as you use the keyword "return" at the end of the function.
+
+		function substract(param1, param2){
+			console.log("I will make a simple substraction")
+			const result = param1 - param2
+			return result
+		}
+
+		//And when we invoke, ofc, I need to save that result / returned value inside a variable
+		const substractionResult = substract(99, 73)
+		console.log("The result of the substraction is: ", substractionResult)
+
+	</script>
+</body>
+</html>
