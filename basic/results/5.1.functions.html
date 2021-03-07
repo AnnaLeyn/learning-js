@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+
+    <script>
+/*##### Task definition (2) ###############
+	- Create the function "logger", that function accepts 1 parameter (1 array)
+	- Inside the function you need to iterate over that array and print all the
+		elements of the array in a LIST (EACH ELEMENT SHOULD BE A LI)
+	- print inside the browser ofc, and put a separator line with HTML in the end of the function
+	- To test this: create 2 or 3 arrays, and call your function passing this arrays as parameter*/
+
+    let myArray = ["blue", "red", "green"]
+    function showArray(myArray){
+         document.write("<ul>")  
+        for (let i = 0; i < myArray.length; i++){
+
+       
+        document.write( myArray[i], "<br>")
+        }
+       
+    } 
+    document.write("</ul>")
+    showArray(myArray)
+
+
+
+    </script>
+    
+</body>
+</html>
