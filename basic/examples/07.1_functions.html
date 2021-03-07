@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>7.1 Functions</title>
+</head>
+<body>
+	<script>
+		// =================================================
+		// * Functions using functions
+		// =================================================
+		// WHAT WE ARE LOOKING FOR IN THE FUNCTIONS, IS TO BE ABLE TO CREATE AND REUSE AS MANY TIMES AS WE WANT THOSE FUNCTIONS, 
+		// IN ORDER TO ABSTRACT CODE AND THAT IS NOT DEPENDENT ON EACH OTHER, IE WE TRY TO CREATE INDEPENDENT MODULES, 
+		// SO OUR CODE IS MORE ROBUST AND REUSABLE.
+
+		// To show how we can create and use functions inside other function, let's create and example
+
+		// - Im defining a single function wich returns a custom message, im defining this
+		//   function because I will use too many times to say "Hi" to my customers
+		// ** This function only RETURNS A MESSAGE, NOTHING MORE, JUST A MESSAGE
+		function greetings(userName){
+			return "Hello " + userName + " nice to meet you"
+		}
+
+		// - Im defining another function to PRINT SOME TEXT IN THE BROWSER, JUST PRINT TEXT IN THE BROWSER AND "die"
+		function printInBrowser(userName){
+			//im calling inside this function, the previous function I already define OUT THIS FUNCTION
+			// and Im passing the argument/parameter the other function REQUIRES
+			const message = greetings(userName)
+			document.write("<h1>" + message + "</h1>")
+		}
+
+		//- Now I will call / invoke the function, as many times I want
+		printInBrowser("Liza")
+		printInBrowser("Vera")
+		printInBrowser("Kevin")
+
+		//Also you can call the other function alone, no problem
+		const message = greetings("Jack")
+		console.log("message: ", message)
+
+
+
+	</script>
+</body>
+</html>

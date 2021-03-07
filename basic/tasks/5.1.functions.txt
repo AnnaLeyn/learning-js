@@ -1,0 +1,74 @@
+== REQUIRES FOR EVERY TASK ==
+- EVERY TASK SHOULD BE IN A DIFFERENT HTML FILE
+- EVERY TASK NEEDS TO BE WELL INDENTED
+- EVERY TASK SHOULD HAVE COMMENTS (IF YOU NEED OFC)
+
+// =================================================
+// * task 1
+// =================================================
+In the results folder, you need to create a HTML file with this name: 5.2.functions.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (1) ###############
+
+	- Create 4 functions with this names
+		- addition
+			- This function receives 2 parameters, with this parameters, you need to make an addition
+		- substraction
+			- This function receives 2 parameters, with this parameters, you need to make a substraction
+		- multiply
+			- This function receives 2 parameters, with this parameters, you need to multiply that numbers
+		- divide
+			- This function receives 2 parameters, with this parameters, you need to divide that numbers
+	- Call/invoke that functions like this and show the results on console
+
+	const test1 = addition(12,20)
+	const test2 = substraction(100,45)
+	const test3 = addition(84,12)
+	const test4 = addition(15,21)
+
+	console.log("Addition result: ", test1)
+	console.log("substraction result: ", test2)
+	console.log("Multiplication result: ", test3)
+	console.log("Division result: ", test4)
+	
+
+// =================================================
+// * task 2
+// =================================================
+In the results folder, you need to create a HTML file with this name: 5.3.functions.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (2) ###############
+	** Build a calculator HYPERS **
+	- Create the "calculator" function
+	- This function receives / accept 3 parameters
+		- First param: type of the operation (string)
+			* Only accepts 4 types of operation
+				.- addition
+				.- substraction
+				.- multiply
+				.- division
+			* If the user introduces other operation name, you need to return this value
+				"That operation is not possible"
+		- Second param: 1 number
+		- Third param: 1 number
+	- Use the correct structure control to build this cases
+	- Use the previous functions (addition, substraction...) you already defined to avoid to repeat code and waste time
+	- I want the exact result as the image: 5.3.result.jpg in the folder result_examples
+
+
+##### Task definition (3) ###############
+In the results folder, you need to create a HTML file with this name: 5.4.functions.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+	- Using your previous functions
+	- Ask the user what operation he wants to do (show what operations you can do)
+	- Ask the first number
+	- Ask the second number
+	- If the introduces other operation, show the message "That operation is not possible" in browser
+	- Make the operation
+	- Print the operation he choose and the result
+
+	Example:
+	"You choose the operation: multiply of this 2 numbers (22,12), the result is: 264"
