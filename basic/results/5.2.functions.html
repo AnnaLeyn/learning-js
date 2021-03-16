@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+    <script>
+
+
+        /*##### Task definition (1) ###############
+        
+        - Create 4 functions with this names
+            - addition
+                - This function receives 2 parameters, with this parameters, you need to make an addition
+            - substraction
+                - This function receives 2 parameters, with this parameters, you need to make a substraction
+            - multiply
+                - This function receives 2 parameters, with this parameters, you need to multiply that numbers
+            - divide
+                - This function receives 2 parameters, with this parameters, you need to divide that numbers
+        - Call/invoke that functions like this and show the results on console
+        
+        const test1 = addition(12,20)
+        const test2 = substraction(100,45)
+        const test3 = addition(84,12)
+        const test4 = addition(15,21)
+        
+        console.log("Addition result: ", test1)
+        console.log("substraction result: ", test2)
+        console.log("Multiplication result: ", test3)
+        console.log("Division result: ", test4)*/
+
+
+        function addition(parameter1 = 29, parameter2 = 103) {
+
+            let result1 = parameter1 + parameter2;
+            return result1
+        };
+
+        addition()
+        console.log("addition result: ", addition())
+
+
+        function substraction(parameter1 = 469, parameter2 = 780) {
+            let result2 = parameter2 - parameter1;
+            return result2
+        };
+        substraction()
+        console.log("substraction result: ", substraction())
+
+        function multiply(parameter1 = 27, parameter2 = 39) {
+            let result3 = parameter1 * parameter2;
+            return result3;
+        };
+        multiply()
+        console.log("multiply result is: ", multiply())
+
+        function divide(parameter1 = 9, parameter2 = 3) {
+            let result4 = parameter1 / parameter2;
+            return result4;
+        };
+        divide()
+        console.log("divide result is: ", divide())
+
+
+
+    </script>
+</body>
+
+</html>

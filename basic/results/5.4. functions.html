@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+    <script>
+        /*##### Task definition (3) ###############
+In the results folder, you need to create a HTML file with this name: 5.4.functions.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+    - Using your previous functions
+    - Ask the user what operation he wants to do (show what operations you can do)
+    - Ask the first number
+    - Ask the second number
+    - If the introduces other operation, show the message "That operation is not possible" in browser
+    - Make the operation
+    - Print the operation he choose and the result
+
+    Example:
+    "You choose the operation: multiply of this 2 numbers (22,12), the result is: 264"*/
+
+        let parameter1 = prompt("What operation you need? Add, Substract, Multiply, Divide");
+        let parameter2 = prompt("Tell the first digit");
+        let parameter3 = prompt("Tell the second digit");
+        function calculator(parameter1, parameter2, parameter3) {
+            switch (parameter1) {
+                case "add":
+                    let parameter2Convert = parseInt(parameter2);
+                    let parameter3Convert = parseInt(parameter3);
+                    let result1 = parameter2Convert + parameter3Convert;
+                    return result1;
+                    break;
+
+                case "substract":
+                    let result2 = parameter2 - parameter3;
+                    return result2;
+                    break;
+                case "multiply":
+                    let result3 = parameter2 * parameter3;
+                    return result3;
+                    break;
+                case "divide":
+                    let result4 = parameter2 / parameter3;
+                    return result4;
+                    break;
+                default:
+                    console.log("That operation is not possible")
+            }
+        }
+        console.log("addition result: ")
+        console.log("substraction result: ", calculator(parameter1, parameter2, parameter3));
+        console.log("multiply result: ");
+        console.log("divide result: ");
+
+
+    </script>
+
+</body>
+
+</html>
