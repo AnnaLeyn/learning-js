@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Functions already defined by JS</title>
+</head>
+<body>
+	<script>
+		// As you know, you can use functions already defined by JS like:
+		// - prompt
+		// - parseInt
+		// - document.write
+		// Also you can define your own funtions to do something
+		// - addition
+		// - substraction
+		// - calculator
+
+		// But, you can use other functions from other objects or data types, like arrays
+		const colors = ["red", "blue", "yellow"]
+		colors.length //Will give u the total of items of this array
+		colors.push("black") //allow us to add a new item to the array
+		colors.reverse() //flips this array in reverse
+
+		// But we can the STRINGS has functions or METHODS TOO, as arrays
+		const userName = "Tatiana "
+		userName.length//Will give us the total of characters it has this string
+		const upperName = userName.toUpperCase()//Will put this string in  MAYUSC
+		const lowerName = userName.toLowerCase()//Will put this string in  MINUSC
+		const cleanedString = userName.trim()//Will delete the empty space from the start and end of the string
+		const arrayOfStrings = userName.split("a")//Will cut our string into pieces using the letter "a" as a separator
+		const index = userName.indexOf("a")//Will give us the first index of the letter a
+		//I saved the new word modified in a new variable because all this functions returns a new word should it be saved 
+		// or overwrited you know
+
+
+		//Also we can use the Strings as arrays, because strings just are a couple of characters joined in the same word right?
+		const sentence = "I always make such expensive mistakes"
+		for (let i = 0; i < sentence.length; i++) {
+			console.log("Character: ",  sentence[i], " is in the position: ", i)			
+		}
+
+
+		// In the future you will learn functions of Objects...but step by step
+	</script>
+</body>
+</html>

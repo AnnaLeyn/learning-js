@@ -1,0 +1,67 @@
+== REQUIRES FOR EVERY TASK ==
+- EVERY TASK SHOULD BE IN A DIFFERENT HTML FILE
+- EVERY TASK NEEDS TO BE WELL INDENTED
+- EVERY TASK SHOULD HAVE COMMENTS (IF YOU NEED OFC)
+
+// =================================================
+// * task 1
+// =================================================
+In the results folder, you need to create a HTML file with this name: 5.5.functions.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (1) ###############
+	- Copy this constant to your file
+	const lyrics = `Cause I told you my level of concern
+									But you walked by like you never heard
+									And you could bring down my level of concern
+									Just need you to tell me we're alright, tell me we're okay`
+	- Iterate over this string and count how many times appears the letter "e"
+	- Convert that string into uppercase and print in browser in a h1 tag
+	- Using some function of strings (you need to search wich function), search the FIRST occurence or the FIRST
+	apperance of the word "you" (give me the index)
+	- Using some function of strings (you need to search wich function), search the LAST occurence or the LAST
+	apperance of the word "you" (give me the index)
+	
+
+// =================================================
+// * task 2
+// =================================================
+In the results folder, you need to create a HTML file with this name: 5.6.functions.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (2) ###############
+	- Create a function wich receives 2 params
+		- First param: is a string
+		- Second param is a string 
+	- This function will use the first param as a text or the haystack
+	- The second param is the word (the needle) I want to search and count how many times appears in the haystack
+
+	Example of how to call this function:
+	const text = "This is a huge text, well, maybe not, but it works for this turotial"
+	const needle = "i"
+	const needleCounter = serachWord(text, needle)
+	console.log("The needle: ", needle, " appears ", needleCounter, " times in the text")
+	//The needle i appears 5 times in the text
+	- Using the same function, count how many times appears the empty space " "
+
+// =================================================
+// * task 3
+// =================================================
+##### Task definition (3) ###############
+In the results folder, you need to create a HTML file with this name: 5.7.functions.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+	** Reverse string **
+	- Create the function "reverseString"
+	- This function accepts 1 parameter
+	- The function should return the word in reverse
+
+	Example:
+	const reversed1 = reverseString("hello")
+	console.log(reversed1)//olleh
+
+	const reversed1 = reverseString("Milaya")
+	console.log(reversed1)//ayaliM
+
+	const reversed1 = reverseString("house")
+	console.log(reversed1)//esuoh
