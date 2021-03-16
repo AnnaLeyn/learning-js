@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Functions</title>
-</head>
-
-<body>
-	<script>
-
-		/*/ =================================================
+  <body>
+    <script>
+      /*/ =================================================
 		// * task 2
 		// =================================================
 		In the results folder, you need to create a HTML file with this name: 5.3.functions.html
@@ -34,42 +32,99 @@
 			- Use the correct structure control to build this cases
 			- Use the previous functions (addition, substraction...) you already defined to avoid to repeat code and waste time
 			- I want the exact result as the image: 5.3.result.jpg in the folder result_examples*/
-		function calculator(parameter1, parameter2, parameter3) {
+      function calculator(parameter1, parameter2, parameter3) {
+        switch (parameter1) {
+          case "addition":
+            let result1 = parameter2 + parameter3;
+            return result1;
+            break;
+          case "substraction":
+            let result2 = parameter2 - parameter3;
+            return result2;
+            break;
+          case "multiply":
+            let result3 = parameter2 * parameter3;
+            return result3;
+            break;
+          case "divide":
+            let result4 = parameter2 / parameter3;
+            return result4;
+            break;
+          default:
+            console.log("That operation is not possible");
+        }
+      }
+      calculator(); //no need to invoke right after the definition
+      console.log(
+        "addition result: ",
+        calculator((parameter1 = "addition"), 10, 20)
+      );
+      console.log(
+        "substraction result: ",
+        calculator((parameter1 = "substraction"), 20, 10)
+      );
+      console.log(
+        "multiply result: ",
+        calculator((parameter1 = "multiply"), 120, 70)
+      );
+      console.log(
+        "divide result: ",
+        calculator((parameter1 = "divide"), 99, 3)
+      );
 
-			switch (parameter1) {
-				case "addition":
-					let result1 = parameter2 + parameter3;
-					return result1;
-					break;
-				case "substraction":
-					let result2 = parameter2 - parameter3;
-					return result2;
-					break;
-				case "multiply":
-					let result3 = parameter2 * parameter3;
-					return result3;
-					break;
-				case "divide":
-					let result4 = parameter2 / parameter3;
-					return result4;
-					break;
-				default:
-					console.log("That operation is not possible")
-			}
+      // =================================================
+      // * CORRECTION
+      // =================================================
+      // Copying and Pasting the function of TASK 2
+			// Because if I already define the functions, why should I make again, just copy and paste
+      function addition(parameter1, parameter2) {
+        return parseInt(parameter1) + parseInt(parameter2);
+      }
+      function substraction(parameter1, parameter2) {
+        return parameter1 - parameter2;
+      }
+      function multiply(parameter1, parameter2) {
+        return parameter1 * parameter2;
+      }
+      function divide(parameter1, parameter2) {
+        return parameter1 / parameter2;
+      }
 
-		} calculator()
-		console.log("addition result: ", calculator(parameter1 = "addition", 10, 20));
-		console.log("substraction result: ", calculator(parameter1 = "substraction", 20, 10));
-		console.log("multiply result: ", calculator(parameter1 = "multiply", 120, 70));
-		console.log("divide result: ", calculator(parameter1 = "divide", 99, 3))
+      //- Defining the calculator
+      function calculator(operation, n1, n2) {
+        let result = 0;
+        switch (operation) {
+          case "addition":
+            result = addition(n1, n2);
+            break;
+          case "substraction":
+            result = substraction(n1, n2);
+            break;
+          case "multiply":
+            result = multiply(n1, n2);
+            break;
+          case "divide":
+            result = divide(n1, n2);
+            break;
 
+          default:
+            result = "That operation is not possible";
+            break;
+        }
 
+				return result
+      }//calculator
 
+			// calling the calculator function here
+			const resul1 = calculator("addition", 22, 29)
+			const resul2 = calculator("substraction", 8495, 6644)
+			const resul3 = calculator("multiply", 44, 5)
+			const resul4 = calculator("divide", 145, 29)
 
-
-
-	</script>
-
-</body>
-
+			console.log("Result addition: ", resul1)
+			console.log("Result substraction: ", resul2)
+			console.log("Result multiply: ", resul3)
+			console.log("Result divide: ", resul4)
+    </script>
+  </body>
 </html>

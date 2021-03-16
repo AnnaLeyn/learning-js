@@ -36,13 +36,15 @@
         console.log("Division result: ", test4)*/
 
 
+        // ##### Correction ###############
+        // You don't need to initialize the params, at least not for this functions
         function addition(parameter1 = 29, parameter2 = 103) {
 
             let result1 = parameter1 + parameter2;
             return result1
         };
 
-        addition()
+        // addition()//unnecesary call
         console.log("addition result: ", addition())
 
 
@@ -50,24 +52,45 @@
             let result2 = parameter2 - parameter1;
             return result2
         };
-        substraction()
+        // substraction()//unnecesary call
         console.log("substraction result: ", substraction())
 
         function multiply(parameter1 = 27, parameter2 = 39) {
             let result3 = parameter1 * parameter2;
             return result3;
         };
-        multiply()
+        // multiply()//unnecesary call
         console.log("multiply result is: ", multiply())
 
         function divide(parameter1 = 9, parameter2 = 3) {
             let result4 = parameter1 / parameter2;
             return result4;
         };
-        divide()
+        // divide()//unnecesary call
         console.log("divide result is: ", divide())
 
+        // =================================================
+        // * CORRECTION
+        // =================================================
+        // - Defining the functions
+        function addition(parameter1, parameter2) {
+            return parseInt(parameter1) + parseInt(parameter2)
+        }
+        function substraction(parameter1, parameter2) {
+            return parameter1 - parameter2
+        }
+        function multiply(parameter1, parameter2) {
+            return parameter1 * parameter2
+        }
+        function divide(parameter1, parameter2) {
+            return parameter1 / parameter2
+        }
 
+        // Testing / calling the functions
+        console.log("addition result: ", addition(15, 55))
+        console.log("substraction result: ", substraction(55, 27))
+        console.log("multiply result: ", multiply(88, 45))
+        console.log("divide result: ", divide(156, 2))
 
     </script>
 </body>

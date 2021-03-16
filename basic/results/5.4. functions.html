@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Functions</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <script>
-        /*##### Task definition (3) ###############
+      /*##### Task definition (3) ###############
 In the results folder, you need to create a HTML file with this name: 5.4.functions.html
 Inside that file, paste this task definition (inside a comment ofc) and solve it.
 
@@ -25,42 +24,91 @@ Inside that file, paste this task definition (inside a comment ofc) and solve it
     Example:
     "You choose the operation: multiply of this 2 numbers (22,12), the result is: 264"*/
 
-        let parameter1 = prompt("What operation you need? Add, Substract, Multiply, Divide");
-        let parameter2 = prompt("Tell the first digit");
-        let parameter3 = prompt("Tell the second digit");
-        function calculator(parameter1, parameter2, parameter3) {
-            switch (parameter1) {
-                case "add":
-                    let parameter2Convert = parseInt(parameter2);
-                    let parameter3Convert = parseInt(parameter3);
-                    let result1 = parameter2Convert + parameter3Convert;
-                    return result1;
-                    break;
+      let parameter1 = prompt(
+        "What operation you need? Add, Substract, Multiply, Divide"
+      );
+      let parameter2 = prompt("Tell the first digit");
+      let parameter3 = prompt("Tell the second digit");
+      function calculator(parameter1, parameter2, parameter3) {
+        switch (parameter1) {
+          case "add":
+            let parameter2Convert = parseInt(parameter2);
+            let parameter3Convert = parseInt(parameter3);
+            let result1 = parameter2Convert + parameter3Convert;
+            return result1;
+            break;
 
-                case "substract":
-                    let result2 = parameter2 - parameter3;
-                    return result2;
-                    break;
-                case "multiply":
-                    let result3 = parameter2 * parameter3;
-                    return result3;
-                    break;
-                case "divide":
-                    let result4 = parameter2 / parameter3;
-                    return result4;
-                    break;
-                default:
-                    console.log("That operation is not possible")
-            }
+          case "substract":
+            let result2 = parameter2 - parameter3;
+            return result2;
+            break;
+          case "multiply":
+            let result3 = parameter2 * parameter3;
+            return result3;
+            break;
+          case "divide":
+            let result4 = parameter2 / parameter3;
+            return result4;
+            break;
+          default:
+            console.log("That operation is not possible");
         }
-        console.log("addition result: ")
-        console.log("substraction result: ", calculator(parameter1, parameter2, parameter3));
-        console.log("multiply result: ");
-        console.log("divide result: ");
+      }
+      console.log("addition result: ");
+      console.log(
+        "substraction result: ",
+        calculator(parameter1, parameter2, parameter3)
+      );
+      console.log("multiply result: ");
+      console.log("divide result: ");
 
+      
+      // =================================================
+      // * CORRECTION
+      // =================================================
+      // Copying and Pasting the function of TASK 2 AND TASK 3
+      // Because if I already define the functions, why should I make again, just copy and paste
+      function addition(parameter1, parameter2) {
+        return parseInt(parameter1) + parseInt(parameter2);
+      }
+      function substraction(parameter1, parameter2) {
+        return parameter1 - parameter2;
+      }
+      function multiply(parameter1, parameter2) {
+        return parameter1 * parameter2;
+      }
+      function divide(parameter1, parameter2) {
+        return parameter1 / parameter2;
+      }
 
+      //- Defining the calculator
+      function calculator(operation, n1, n2) {
+        let result = 0;
+        switch (operation) {
+          case "addition":
+            result = addition(n1, n2);
+            break;
+          case "substraction":
+            result = substraction(n1, n2);
+            break;
+          case "multiply":
+            result = multiply(n1, n2);
+            break;
+          case "divide":
+            result = divide(n1, n2);
+            break;
+
+          default:
+            result = "That operation is not possible";
+            break;
+        }
+
+        return result;
+      } //calculator
+
+      //testing and calling the function using the responses from user
+      const resultUser = calculator(parameter1, parameter2, parameter3)
+      console.log("result user: ", resultUser)
     </script>
-
-</body>
-
+  </body>
 </html>
