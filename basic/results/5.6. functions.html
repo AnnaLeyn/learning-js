@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Functions'string</title>
+</head>
+
+<body>
+	<script>
+		/*##### Task definition (2) ###############
+	- Create a function wich receives 2 params
+		- First param: is a string
+		- Second param is a string 
+	- This function will use the first param as a text or the haystack
+	- The second param is the word (the needle) I want to search and count how many times appears in the haystack
+
+	Example of how to call this function:
+	const text = "This is a huge text, well, maybe not, but it works for this turotial"
+	const needle = "i"
+	const needleCounter = serachWord(text, needle)
+	console.log("The needle: ", needle, " appears ", needleCounter, " times in the text")
+	//The needle i appears 5 times in the text
+	- Using the same function, count how many times appears the empty space " "*/
+
+		const sentence = "This is a huge text, well, maybe not, but it works for this tutorial"
+		let counter = 1;
+		for (let i = 0; i < sentence.length; i++) {
+			space = sentence[i];		
+			if (space == " "){
+				counter++;
+			}					
+		}console.log("the space appears ", counter, " in the text")	
+	
+
+
+
+	</script>
+</body>
+
+</html>
