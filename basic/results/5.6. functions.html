@@ -25,16 +25,28 @@
 	//The needle i appears 5 times in the text
 	- Using the same function, count how many times appears the empty space " "*/
 
-		const sentence = "This is a huge text, well, maybe not, but it works for this tutorial"
+		/*const sentence = "This is a huge text, well, maybe not, but it works for this tutorial"
 		let counter = 1;
+		function search(param1, param2){
 		for (let i = 0; i < sentence.length; i++) {
 			space = sentence[i];		
 			if (space == " "){
 				counter++;
 			}					
-		}console.log("the space appears ", counter, " in the text")	
-	
-
+		}
+	}console.log("the space appears ", search(), " in the text")	*/
+	const sentence = "This is a huge text, well, maybe not, but it works for this turotial";
+	let counter = 1;
+	function searchWord (needle, haystack){
+		
+		for (let i = 0; i < haystack.length; i++) {
+		
+			currentLetter = haystack[i];
+			if (needle == currentLetter){
+				counter++;
+			}
+		}
+	}searchWord("i", sentence);
 
 
 	</script>
