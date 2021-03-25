@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JSON</title>
+</head>
+
+<body>
+	<script>
+		// =================================================
+		// * JSON
+		// =================================================
+		// Javascript Object Notation
+		// JSON, or JavaScript Object Notation, is a minimal, readable format for structuring data
+
+		// All this objects only needs a key value(you can think on it as a dictionary)
+		// Like a dictionary, every value needs a key...key=value
+
+		// =================================================
+		// * How to define an Object
+		// =================================================
+		// Just adding a variable to store
+		// and assigning the key and the value
+		const example = {
+			key: "value"
+		}
+		// Each key of a JSON is called "attribute"
+		// - To define the attributes of the objects we usually use the snake_case
+		// - How many attributes can have a JSON? As much as u need
+		// - What can we store inside? Wathever u need or wathever u want
+		// Can I have objects of objects? Sure
+
+		// =================================================
+		// * Example
+		// =================================================
+		const person = {
+			name: "John",
+			birth_date: "1990/04/21",
+			married: true,
+		}
+		//We access to this attributes using the dot "." and the name of the attribute
+		console.log(person.name)
+		console.log("Hello, my name is :", person.name)
+
+		const pet = {
+			name: "Larry",
+			type: "dog",
+			race: "bulldog",
+			paws: 4
+		}
+		// Also we can define actions to this objects
+		// Defining a callback function
+		const cat = {
+			name: "Kitty",
+			speak: function () {
+				console.log("Miauuuu miaaauuu!")
+			},
+			play: function () {
+				console.log("Playing with a ball of paper")
+			}
+		}
+		// And we call this functions like this
+		console.log(cat.speak())
+
+		// =================================================
+		// * Complicated examples
+		// =================================================
+		// In this example we can do a more normal object, to see how 
+		// we use in real world
+		const streamer1 = {
+			name: "Anna",
+			twitch_name: "AnnaLeynTV",
+			twitch_url: "https://www.twitch.tv/annaleyntv",
+			games: [
+				"Overwatch",
+				"Paragon",
+				"Nier Automata"
+			],
+			schedule: false,
+			category: "Overwatch"
+		}
+
+		const streamer2 = {
+			name: "Azzer",
+			twitch_name: "Azzer_41",
+			twitch_url: "https://www.twitch.tv/Azzer_41",
+			games: [
+				"Paragon",
+				"Programming"
+			],
+			schedule: false,
+			category: "Programming"
+		}
+
+		// Also we can define an array of objects
+		const streamers = [
+			streamer1,
+			streamer2
+		]
+		console.log(streamers)
+
+		//Also we can use the console.table function to paint this objects much better
+		console.table(streamers)
+
+
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Callback functions</title>
+</head>
+<body>
+	<script>
+		// =================================================
+		// * Callback functions
+		// =================================================
+		// The callback functions are function we define with any name, 
+		// basically function we pass as parameter
+
+		//We are defining a function without any name, and assinging the function
+		// to the variable speak.
+		// So, if we want to use this function, we need to call the "speak" variable to use 
+		// the function
+		const speak = function (text) {
+			console.log(text)
+		}
+
+		speak("Hello")
+		speak("Im using a function")
+
+		// =================================================
+		// * ES6 functions (syntax sugar)
+		// =================================================
+		// With the new features of JS, we can define functions in other way and write less code
+		// But can be a little difficult in the beggining.
+		// To declare this function we are using the arrow function
+
+		// We are declaring the variable and assingning the function as value to call later
+		const speak2 = (text) => {
+			console.log(text)
+		}
+
+		speak2("more text to show")
+		speak2("and still working as a normal function")
+
+		// Examples
+		const searchWord = (needle, haystack) => {
+			let counter = 0
+			for (let i = 0; i < haystack.length; i++) {
+				const currentLetter = haystack[i];
+				if(needle === currentLetter){
+					counter++
+				}
+			}//for
+			return counter
+		};// searchWord
+		searchWord("a", "This is some text :D")
+	</script>
+</body>
+</html>

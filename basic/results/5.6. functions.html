@@ -35,18 +35,49 @@
 			}					
 		}
 	}console.log("the space appears ", search(), " in the text")	*/
-	const sentence = "This is a huge text, well, maybe not, but it works for this turotial";
-	let counter = 1;
-	function searchWord (needle, haystack){
-		
-		for (let i = 0; i < haystack.length; i++) {
-		
-			currentLetter = haystack[i];
-			if (needle == currentLetter){
-				counter++;
+		const sentence = "This is a huge text, well, maybe not, but it works for this turotial";
+		let counter = 1;
+		function searchWord(needle, haystack) {
+
+			for (let i = 0; i < haystack.length; i++) {
+
+				currentLetter = haystack[i];
+				if (needle == currentLetter) {
+					counter++;
+				}
 			}
 		}
-	}searchWord("i", sentence);
+		searchWord("i", sentence);
+
+		// =================================================
+		// * correction
+		// =================================================
+		function getWords(needle, haystack) {
+			let counter = 0
+			for (let i = 0; i < haystack.length; i++) {
+				let currentLetter = haystack[i];
+				if (currentLetter == needle) {
+					counter++
+				}
+
+			}//end for
+			return counter
+		} //getWords
+
+		// =================================================
+		// * variables
+		// =================================================
+		const sentence1 = "This is a huge text, well, maybe not, but it works for this turotial"
+		const sentence2 = "My mom thought that rising talent badge is a big thing. Even I tried to explain it's nothing"//ofc u are a genius
+
+		const counter1 = getWords("i", sentence1)
+		const counter2 = getWords(",", sentence1)
+
+		// =================================================
+		// * Testing
+		// =================================================
+		console.log("The needle 'i' appears ", counter1, " times")
+		console.log("The needle ',' appears ", counter2, " times")
 
 
 	</script>

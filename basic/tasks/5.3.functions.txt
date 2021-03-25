@@ -1,0 +1,36 @@
+== REQUIRES FOR EVERY TASK ==
+- EVERY TASK SHOULD BE IN A DIFFERENT HTML FILE
+- EVERY TASK NEEDS TO BE WELL INDENTED
+- EVERY TASK SHOULD HAVE COMMENTS (IF YOU NEED OFC)
+
+// =================================================
+// * task 1
+// =================================================
+In the results folder, you need to create a HTML file with this name: 5.8.functions.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (1) ###############
+	- Create a function wich returns the extension of an image
+	- I will pass you one string as parameter, you need to RETURN me what extension is that image
+	- Print in the browser the name of the image and the extension
+	- If I introduce any image without any extension, show a message like the example
+	
+
+// =================================================
+// * task 2
+// =================================================
+In the results folder, you need to create a HTML file with this name: 5.9.functions.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (2) ###############
+	- Using the function you already define in the task 1, show all the extensions 
+		of this files
+	- Before to start with this task YOU MUST TO SEND TO ME UR PSEUDOCODE
+
+	const files = [
+		"birds.jpg",
+		"puppies_2021.png",
+		"invoice_upwork_03_2021.pdf",
+		"project_1.ppt",
+		"file.docx"
+	]

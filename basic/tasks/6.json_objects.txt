@@ -1,0 +1,40 @@
+== REQUIRES FOR EVERY TASK ==
+- EVERY TASK SHOULD BE IN A DIFFERENT HTML FILE
+- EVERY TASK NEEDS TO BE WELL INDENTED
+- EVERY TASK SHOULD HAVE COMMENTS (IF YOU NEED OFC)
+
+// =================================================
+// * task 1
+// =================================================
+In the results folder, you need to create a HTML file with this name: 6.json_objects.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (1) ###############
+	- Define 3 bands as different objects
+	- Each band needs to have this attributes
+		- name
+		- creation date
+		- music type (pop, rock, punk)
+		- status (to check if this band is active or not...true or false)
+		- members (array with names)
+		- Additional attribute you think is interesting
+	- Store all this bands in a single array
+	- Print that array in the console as a table
+	
+
+// =================================================
+// * task 2
+// =================================================
+In the results folder, you need to create a HTML file with this name: 6.1.json_objects.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (2) ###############
+	** Nerd time **
+	- Define 2 tanks, 1 dps and 1 healer of Overwatch
+	- Each hero needs to have this attributes and actions
+		- name
+		- role
+		- main habilty (describe what is the main hability of that hero)
+		- ultimate (Using a function show in console what is the ultimate of that hero)
+		- has weapon (boolean)
+		- speak (show any line from that hero in the console)
