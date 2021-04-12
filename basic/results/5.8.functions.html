@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions
+    </title>
+</head>
+<body>
+    <script>
+       /* // * task 1
+// =================================================
+In the results folder, you need to create a HTML file with this name: 5.8.functions.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (1) ###############
+	- Create a function wich returns the extension of an image
+	- I will pass you one string as parameter, you need to RETURN me what extension is that image
+	- Print in the browser the name of the image and the extension
+	- If I introduce any image without any extension, show a message like the example
+	*/
+
+/*let extension = getImage("bird.jpg");
+
+function getImage (parameter){
+    fullWord = parameter.split(".")
+    if (fullWord.length > 1){
+    return fullWord.pop();
+   
+    }
+    else{
+        return null
+        
+    }
+   
+} 
+if (extension == null)
+{document.write("doesn't exist")
+}else{
+    document.write("The name of the file is - ", fullWord, " the extension of it - ", extension)
+}*/
+let extension = getImage("bird.jpg");
+
+function getImage (parameter){
+    fullWord = parameter.split(".")
+    if (fullWord.length > 1){
+    return fullWord.pop();
+   
+    }
+    else{
+        return null
+        
+    }
+   
+} 
+const files = [
+		"birds.jpg",
+		"puppies_2021.png",
+		"invoice_upwork_03_2021.pdf",
+		"project_1.ppt",
+		"file.docx"
+	]
+    for (let i = 0; i < files.length; i++){
+        let oneFile = files[i]
+        getImage(oneFile)
+        if (extension == null)
+{document.write("doesn't exist <br>")
+}else{
+    document.write("The image: ", "<span style = 'color:orange; font-weight:bold'>", fullWord, "</span>", " has the extension - ", "<span style = 'color:blue; font-weight:bold'>", extension, "</span>","<br>")
+}
+        }
+
+    </script>
+    
+</body>
+</html>
