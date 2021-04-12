@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<script>
+		// With JS we can create and modify elements from the DOM.
+		// You will learn how to create HTML elements and insert into your document.body
+
+		//  ### IMPORTANT ### 
+		// Look the order of this example, you cannot insert the text if the element doesn't exist.
+		// First you need to create the container and then the content
+
+		// =================================================
+		// * Creating a element
+		// =================================================
+		// This function allow us to create HTML element, only create, without nothing inside.
+		// If you want some text or another child elements or classes in this element, you need 
+		// add one by one
+		const parragraph = document.createElement("p")
+		console.log(parragraph);
+		//* Creating text for this element
+		const parragraphText = document.createTextNode("This is the text I will insert inside my P TAG")
+		//* Inserting the text inside the parragraph
+		parragraph.appendChild(parragraphText)
+		// If I print this in console, you will see the P tag with this text
+		console.log(parragraph);
+
+		// =================================================
+		// * Appending to the END to the body
+		// =================================================
+		// Now our element is complete, so we can append to the body tag
+		document.body.appendChild(parragraph)
+	</script>
+</body>
+</html>

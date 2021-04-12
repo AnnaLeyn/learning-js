@@ -1,0 +1,37 @@
+== REQUIRES FOR EVERY TASK ==
+- EVERY TASK SHOULD BE IN A DIFFERENT HTML FILE
+- EVERY TASK NEEDS TO BE WELL INDENTED
+- EVERY TASK SHOULD HAVE COMMENTS (IF YOU NEED OFC)
+
+// =================================================
+// * task 1
+// =================================================
+In the results folder, you need to create a HTML file with this name: 1.elements.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (1) ###############
+	- Create an H2 with some text and add some text
+	- Create a strong tag with some text and add some text
+	- Create a a TAG (link) tag with some text and add some text
+	Append all this elements to the body TAG
+	
+
+// =================================================
+// * task 2
+// =================================================
+In the results folder, you need to create a HTML file with this name: 2.elements.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (2) ###############
+	Create this structure with JS (in the correct order)
+	and append to the body
+	
+		<article>
+			<h2>This is the title of this new</h2>
+			<i>Author</i>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quibusdam veniam odit sapiente alias ducimus vitae praesentium labore laborum. Iusto velit amet quia numquam ab distinctio aspernatur, et eveniet tenetur!
+				Dignissimos ut, suscipit error modi dolorum beatae adipisci explicabo, a deserunt commodi illum veniam eveniet cumque sint qui consequuntur. Sequi recusandae fuga necessitatibus ab cumque iusto error nihil aspernatur quas.
+			</p>
+			<hr>
+		</article>
