@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+/*##### Task definition (2) ###############
+	Create this structure with JS (in the correct order)
+	and append to the body
+	
+		<article>
+			<h2>This is the title of this new</h2>
+			<i>Author</i>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quibusdam veniam odit sapiente alias ducimus vitae praesentium labore laborum. Iusto velit amet quia numquam ab distinctio aspernatur, et eveniet tenetur!
+				Dignissimos ut, suscipit error modi dolorum beatae adipisci explicabo, a deserunt commodi illum veniam eveniet cumque sint qui consequuntur. Sequi recusandae fuga necessitatibus ab cumque iusto error nihil aspernatur quas.
+			</p>
+			<hr>
+		</article>*/
+        const article = document.createElement("article")
+
+        const h2 = document.createElement("h2")
+        const h2Text = document.createTextNode("This is the title of this new")
+        h2.appendChild(h2Text)
+
+        const i = document.createElement("i")
+        const iText = document.createTextNode("Author")
+        i.appendChild(iText)
+
+        const p = document.createElement("p")
+        const pText = document.createTextNode("Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quibusdam veniam odit sapiente alias ducimus vitae praesentium labore laborum. Iusto velit amet quia numquam ab distinctio aspernatur, et eveniet tenetur! Dignissimos ut, suscipit error modi dolorum beatae adipisci explicabo, a deserunt commodi illum veniam eveniet cumque sint qui consequuntur. Sequi recusandae fuga necessitatibus ab cumque iusto error nihil aspernatur quas.")
+        p.appendChild(pText)
+
+        const hr = document.createElement("hr")
+
+        document.body.appendChild(article)
+        document.body.appendChild(h2)
+        document.body.appendChild(i)
+        document.body.appendChild(p)
+        document.body.appendChild(hr)
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements</title>
+</head>
+<body>
+    <script>
+
+        
+/*##### Task definition (1) ###############
+	- Create an H2 with some text and add some text
+	- Create a strong tag with some text and add some text
+	- Create a a TAG (link) tag with some text and add some text
+	Append all this elements to the body TAG*/
+    const h2Custom = document.createElement("h2");
+    const h2Text = document.createTextNode("This is text for h2")
+    h2Custom.appendChild(h2Text)
+    
+    const header = document.createElement("header")
+    const headerText = document.createTextNode("this is a text for header")
+    header.appendChild(headerText)
+
+    const a = document.createElement("a")
+    const aText = document.createTextNode("this is link")
+    a.appendChild(aText)
+    
+    document.body.appendChild(h2Custom)
+    document.body.appendChild(header)
+    document.body.appendChild(a)
+    
+
+    
+    </script>
+    
+</body>
+</html>
