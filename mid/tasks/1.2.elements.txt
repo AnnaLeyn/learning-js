@@ -1,0 +1,48 @@
+MAKE ALL THIS TASKS IN THE RESULS FOLDER INSIDE THE MID FOLDER!!
+
+== REQUIRES FOR EVERY TASK ==
+- EVERY TASK SHOULD BE IN A DIFFERENT HTML FILE
+- EVERY TASK NEEDS TO BE WELL INDENTED
+- EVERY TASK SHOULD HAVE COMMENTS (IF YOU NEED OFC)
+
+// =================================================
+// * task 1
+// =================================================
+In the results folder, you need to create a HTML file with this name: 3.elements.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (1) ###############
+- Create an H2 with the content => "Fruits list" and append to body
+- Using this array of fruits, you need to create an ordered list with JS and append to the body after the H2
+
+const fruits = [
+	"orange",
+	"banana",
+	"apple",
+	"kiwi",
+	"watermelon",
+	"tangerine"
+]
+
+	
+
+// =================================================
+// * task 2
+// =================================================
+In the results folder, you need to create a HTML file with this name: 4.elements.html
+Inside that file, paste this task definition (inside a comment ofc) and solve it.
+
+##### Task definition (2) ###############
+	Create this structure and append to the 10 times to the body
+
+	<div class="post">
+		<h2> This is the post nº 1</h2>
+		<p>
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos eum facere architecto aut esse temporibus nobis ipsum voluptates nesciunt expedita iure, accusamus est consequatur laudantium voluptate voluptatem. Vero, laboriosam libero!
+		</p>
+		<small>Author nº 1</small>
+		<hr>
+	</div>
+
+	- Each post should have the consecutive number (check the results_examples/3_elements.PNG)
+		

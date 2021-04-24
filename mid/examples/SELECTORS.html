@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Selectors</title>
+</head>
+<!--  -->
+<div class="container"></div>
+<!--  -->
+<div id="content"></div>
+<!--  -->
+<header class="menu">
+	<nav>
+		<ul>
+			<li>Option 1</li>
+			<li>Option 2</li>
+			<li>Option 3</li>
+			<li>Option 4</li>
+		</ul>
+	</nav>
+</header>
+
+<body>
+	<script>
+		// A selector is a statement that allows us to search for 1 or more elements within the DOM
+		// In order to do this JS provides us with many functions to search for 1 or more elements.
+		// All these functions are mainly used to search inside the DOM, that's why we use document, 
+		// but you can also use it to search for elements inside a concrete structure
+
+		// =================================================
+		// * querySelector (the most common)
+		// =================================================
+		// the document.querySelector ALWAYS ALWAYS ALWAYS ALWAYS ALWAYS RETURNS THE FIRST ELEMENT IT FINDS WITH THE PARAMETER YOU PASS IT AND IT ONLY RETURNS 1 ELEMENT, ALWAYS
+		// ALWAYS RETURNS A HTML ELEMENT
+
+		const meta = document.querySelector("meta")
+		console.log(meta)//Will show the FIRST META TAG in this document
+		
+		//* We can use the CSS selectors too
+		// using classes
+		const container = document.querySelector(".container")
+		console.log(container)//Will show the FIRST element with this class
+
+		// using ids
+		const content = document.querySelector("#content")
+		console.log(content)
+
+		//*As u see before, if we want to select the elements using classes we use the "." (dot) and his name
+		// or the # for IDs
+
+		//* We can also select elements from some parent
+		const nav = document.querySelector(".menu nav")
+		console.log(nav);//From the .menu class, go and search the first NAV TAG inside the .menu
+
+		// =================================================
+		// * querySelectorAll
+		// =================================================
+		// this function works like the first, but in this case, will returns all the elements who did match with your term.
+		// ALWAYS RETURNS A HTMLCollection (like an array, but of elements, BUT, you cannot use the array methods)
+
+		const lis = document.querySelectorAll(".menu li")
+		console.log(lis); //From the .menu, give me all the LI tag inside this .menu element
+
+		const metas = document.querySelectorAll("meta")
+		console.log(metas);//From the BODY, give me all the META TAGS
+
+		// =================================================
+		// * getElementById
+		// =================================================
+		// This function only works with ID, in this case, you don't need to use the symbol "#", just use the name
+		// ALWAYS WILL RETURN THE FIRST ELEMENT WITH THAT ID
+
+		const contentElement = document.getElementById("content")
+
+		// =================================================
+		// * getElementsByClassName
+		// =================================================
+		// This function only will search on elemnents with some class
+		// ALWAYS RETURNS AN ARRAY OF ELEMENTS (can be empty, but is an empty array :D)
+		const menuElement = document.getElementsByClassName("menu")
+
+		// =================================================
+		// * getElementByTagName
+		// =================================================
+		// This funcion only works searching tags, NO CLASSES OR IDS
+		const allMetas = document.getElementsByTagName("meta")
+
+
+		// TBH THE MOST USED ARE querySelector or getElementById, but you need to know there are a couple more
+
+	</script>
+</body>
+
+</html>
