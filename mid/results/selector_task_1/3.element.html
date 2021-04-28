@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* ##### Task definition (1) ###############
+- Create an H2 with the content => "Fruits list" and append to body
+- Using this array of fruits, you need to create an ordered list with JS and append to the body after the H2
+
+const fruits = [
+	"orange",
+	"banana",
+	"apple",
+	"kiwi",
+	"watermelon",
+	"tangerine"
+] */
+const h2 = document.createElement("h2")
+const h2Text = document.createTextNode("Fruit List")
+h2.appendChild(h2Text)
+
+const ul = document.createElement("ul")
+
+const fruits = ["orange", "banana", "apple", "kiwi", "watermelon", "tangerine"]
+
+for(let i = 0; i < fruits.length; i++){
+    const li = document.createElement("li")
+    const liText = document.createTextNode(fruits[i])
+    li.appendChild(liText)
+    ul.appendChild(li)
+}
+document.body.appendChild(h2)
+document.body.appendChild(ul)
+
+
+
+    </script>
+    
+</body>
+</html>
