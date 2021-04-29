@@ -1,57 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 </head>
+
 <body>
-    <script>
+	<script>
 
-/*##### Task definition (2) ###############
-	Create this structure and append to the 10 times to the body
-
-	<div class="post">
-		<h2> This is the post nº 1</h2>
-		<p>
-			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos eum facere architecto aut esse temporibus nobis ipsum voluptates nesciunt expedita iure, accusamus est consequatur laudantium voluptate voluptatem. Vero, laboriosam libero!
-		</p>
-		<small>Author nº 1</small>
-		<hr>
-	</div>
-
-	- Each post should have the consecutive number (check the results_examples/3_elements.PNG)*/
-    const post = document.createElement("post")
-
-
-	for (let i = 1; i < 10; i++){
+		/*##### Task definition (2) ###############
+			Create this structure and append to the 10 times to the body
 		
-	const h2 = document.createElement("h2")
-	const h2Text = document.createTextNode("This is the post nº" +i)
-	h2.appendChild(h2Text)
-
-	const p = document.createElement("p")
-	const pText = document.createTextNode("Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos eum facere architecto aut esse temporibus nobis ipsum voluptates nesciunt expedita iure, accusamus est consequatur laudantium voluptate voluptatem. Vero, laboriosam libero!")
-	p.appendChild(pText)
-
-	const small = document.createElement("small")
-	const smallText = document.createTextNode("Author nº" +i)
-	small.appendChild(smallText)
-
-	const hr = document.createElement("hr")
-
-	post.appendChild(h2)
-	post.appendChild(p)
-	post.appendChild(small)
-	post.appendChild(hr)
+			<div class="post">
+				<h2> This is the post nº 1</h2>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos eum facere architecto aut esse temporibus nobis ipsum voluptates nesciunt expedita iure, accusamus est consequatur laudantium voluptate voluptatem. Vero, laboriosam libero!
+				</p>
+				<small>Author nº 1</small>
+				<hr>
+			</div>
 		
-	}
-	document.body.appendChild(post)
+			- Each post should have the consecutive number (check the results_examples/3_elements.PNG)*/
+		const post = document.createElement("post") //x => THIS ELEMENT DOESN'T EXISTS
 
 
-		
-    </script>
-    
+		for (let i = 1; i < 10; i++) {
+
+			const h2 = document.createElement("h2")
+			const h2Text = document.createTextNode("This is the post nº" + i)
+			h2.appendChild(h2Text)
+
+			const p = document.createElement("p")
+			const pText = document.createTextNode("Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos eum facere architecto aut esse temporibus nobis ipsum voluptates nesciunt expedita iure, accusamus est consequatur laudantium voluptate voluptatem. Vero, laboriosam libero!")
+			p.appendChild(pText)
+
+			const small = document.createElement("small")
+			const smallText = document.createTextNode("Author nº" + i)
+			small.appendChild(smallText)
+
+			const hr = document.createElement("hr")
+
+			post.appendChild(h2)
+			post.appendChild(p)
+			post.appendChild(small)
+			post.appendChild(hr)
+
+		}
+		//YOU ARE OVERWRITTING THE POST EACH TIME, WORKS, BUT WOW xD
+		document.body.appendChild(post)
+
+
+
+	</script>
+
 </body>
+
 </html>
